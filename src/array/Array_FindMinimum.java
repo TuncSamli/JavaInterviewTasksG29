@@ -8,13 +8,13 @@ public class Array_FindMinimum {
     }
 
     public static int returnMin(int[] arr) {
-        int min = arr[0];//default array value index 0; variable max  can contain only 1 number;
+        int min = arr[0];//default array value index 0; variable min  can contain only 1 number;
         for (int i = 1; i < arr.length; i++) { //iteration from 0 to the last index
             if (arr[i] < min) { // iteration will be implemented from the first to the last element and will be finished
-                min = arr[i]; // it will place max value element into variable max
+                min = arr[i]; // it will place min value element into variable min
             }
         }
-        return min; //return max value;
+        return min; //return min value;
     }
 }
 // Write a function that can find the minimum number from an int Array
